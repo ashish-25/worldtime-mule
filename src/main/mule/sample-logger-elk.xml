@@ -15,12 +15,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	region : attributes.uriParams.region
 }]]]></http:uri-params>
 		</http:request>
-		<json-logger:logger doc:name="Logger" doc:id="66f310b7-0581-4a23-abdc-33e1f5a85782" headers='#[output application/json ---
-{
- 	 header: "json"
-}]' keyfields='#[output application/json ---
-{
- 	 keyfield: "Pid"
-}]' config-ref="JSON_Logger_Config" loggingMessage="HELLo"/>
 	</flow>
 </mule>
